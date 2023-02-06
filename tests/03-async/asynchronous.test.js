@@ -1,4 +1,4 @@
-const apiExample = require('../src/asynchronous');
+const apiExample = require('../../src/asynchronous');
 const dataExample = {PAI: '2022-2023'};
 
 test('API Example 1', () => {
