@@ -6,7 +6,7 @@ class ListClass { /// Class example
   insert(element) { /// method for insert elements
     this.list.push(element);
   }
-
+ 
   reset() { /// method for erase all elements
     this.list = [];
   }
