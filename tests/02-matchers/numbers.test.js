@@ -9,7 +9,7 @@ test('Two plus Two', () => {
 });
 
 test('Floating values', () => {
-  const value = 1.0 + 2.0;
-  // expect(value).toBe(3.0);
-  expect(value).toBeCloseTo(3.0);
+  const value = 0.1 + 0.2;
+  //expect(value).toEqual(0.3);
+  expect(value).toBeCloseTo(0.3);
 })
