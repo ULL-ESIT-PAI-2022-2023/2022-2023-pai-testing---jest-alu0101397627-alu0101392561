@@ -11,5 +11,5 @@ afterEach(() => { /// Repeats before every test
 });
 
 test('The list contains apples and pears', () => {
-  expect(list.getList()).toStrictEqual(["apples","pears"]);
+  expect(list.getList()).toStrictEqual(['apples','pears']);
 });
