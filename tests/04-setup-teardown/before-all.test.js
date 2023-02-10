@@ -1,4 +1,4 @@
-const ListClass = require('../../src/setup.teardown'); /// Importing the class
+const ListClass = require('../../src/setup-teardown'); /// Importing the class
 let list = new ListClass;
 beforeAll(() => { /// Only use one time
   list.insert('bananas');

@@ -1,4 +1,4 @@
-const ListClass = require('../../src/setup.teardown'); /// Importing the class
+const ListClass = require('../../src/setup-teardown'); /// Importing the class
 let list1 = new ListClass;
 let list2 = new ListClass;
 beforeEach(() => { /// Applies for all the test on this file
