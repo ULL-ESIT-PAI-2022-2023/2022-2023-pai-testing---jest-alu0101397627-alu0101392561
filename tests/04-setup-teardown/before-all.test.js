@@ -1,4 +1,4 @@
-const ListClass = require('../../src/setup-teardown'); /// Importing the class
+const ListClass = require('../../src/setup.teardown'); /// Importing the class
 let list = new ListClass;
 beforeAll(() => { /// Only use one time
   list.insert('bananas');
@@ -11,5 +11,5 @@ afterAll(() => { /// Only use one time
 });
 
 test('The list contains bananas, apples and tomatoes', () => {
-  expect(list.getList()).toStrictEqual(["bananas","apples","tomatoes"]);
+  expect(list.getList()).toEqual(['bananas','apples','tomatoes']);
 });
