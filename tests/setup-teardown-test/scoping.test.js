@@ -8,7 +8,7 @@ beforeEach(() => { /// Applies for all the test on this file
 });
 
 test('The list contains bananas, apples and tomatoes', () => {
-  expect(list1.getList()).toStrictEqual(['bananas','apples','tomatoes']);
+  expect(list1.getList()).toEqual(['bananas','apples','tomatoes']);
 });
 
 describe('The list of school materials', () => {
@@ -19,6 +19,6 @@ describe('The list of school materials', () => {
   });
 
   test('The list contains pencil, rubber and a pen', () => {
-    expect(list2.getList()).toStrictEqual(['pencil','rubber','pen']);
+    expect(list2.getList()).toEqual(['pencil','rubber','pen']);
   });
 });
