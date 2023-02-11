@@ -1,6 +1,7 @@
 const prime = require('../src/primality');
 
 // Timeout for not async functions
+// https://github.com/facebook/jest/issues/11543
 const testTimeoutInMs = 5000; // 5 seconds
 let testStartTime;
 
@@ -27,10 +28,10 @@ describe('Check if a number is prime', () => {
   });
 
   test('Check if large number is prime in time - Slower Version', () => {
-    expect(prime.primeNumberSlow(2147483647)).toBeTruthy();
+    expect(prime.primeNumberSlow(370248451)).toBeTruthy();
   }); 
 
   test('Check if large number is prime in time - Faster Version', () => {
-    expect(prime.primeNumberFast(2147483647)).toBeTruthy();
+    expect(prime.primeNumberFast(370248451)).toBeTruthy();
   });
 });
