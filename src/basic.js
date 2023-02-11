@@ -1,4 +1,5 @@
-function sum(a, b) { /// A simple example of function
-  return a + b;
-}
+const sum = (opOne, opTwo)  => {
+  return opOne + opTwo;
+};
+
 module.exports = sum;
