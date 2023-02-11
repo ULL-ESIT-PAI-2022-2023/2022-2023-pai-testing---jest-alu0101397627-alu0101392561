@@ -1,15 +1,20 @@
 const ListClass = require('../../src/setup-teardown'); /// Importing the class
-
 let list = new ListClass;
-beforeEach(() => { /// Repeats before every test
-  list.insert('apples');
-  list.insert('pears');
+
+beforeEach(() => { /// Only use one time
+  list.insert('bananas');
 });
 
-afterEach(() => { /// Repeats before every test
-  list.reset();
+afterEach(() => { /// Only use one time
+  list.insert('coco');
 });
 
-test('The list contains apples and pears', () => {
-  expect(list.getList()).toStrictEqual(['apples','pears']);
-});
+describe('BeforeAll and AfterAll examples', () => {
+  test('The list contains bananas, apples and tomatoes', () => {
+    expect(list.getList()).toStrictEqual(['bananas']);
+  });
+  
+  test('The list contains bananas, apples and tomatoes', () => {
+    expect(list.getList()).toStrictEqual(['bananas','coco','bananas']);
+  });
+})
