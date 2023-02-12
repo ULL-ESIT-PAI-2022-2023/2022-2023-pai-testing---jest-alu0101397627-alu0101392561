@@ -2,7 +2,7 @@
 
 * [Jest](https://jestjs.io/docs/getting-started)
 * [Jest Expect Object](https://jestjs.io/docs/expect)
-* [W3Schools Async](https://www.w3schools.com/js/js_async.asp)
-* [Mocks](https://medium.com/@rickhanlonii/understanding-jest-mocks-f0046c68e53c)
+* [Timeout Not Async Functions - Facebook Issue](https://github.com/facebook/jest/issues/11543)
+* [Jest Matchers](https://jestjs.io/docs/using-matchers)
+* [Jest Setup and Teardown](https://jestjs.io/docs/setup-teardown)
 * [Exercism](https://exercism.org/)
-* [Exercism Darts](https://exercism.org/tracks/javascript/exercises/darts)
