@@ -4,12 +4,12 @@
 //
 
 const score = (x, y) => {
-  const distance = Math.sqrt(x * x + y * y);
-  if (distance <= 1) {
+  const DISTANCE = Math.sqrt(x * x + y * y);
+  if (DISTANCE <= 1) {
     return 10;
-  } else if (distance <= 5) {
+  } else if (DISTANCE <= 5) {
     return 5;
-  } else if (distance <= 10) {
+  } else if (DISTANCE <= 10) {
     return 1;
   } else {
     return 0;
