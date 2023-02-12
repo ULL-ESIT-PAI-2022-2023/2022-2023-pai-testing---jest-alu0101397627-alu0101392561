@@ -1,19 +1,19 @@
 class ListClass { /// Class example
   constructor() { /// Constructor
-    this.list = [];
+    this.list_ = [];
   } 
   insert(element) { /// method for insert elements
-    this.list.push(element);
+    this.list_.push(element);
   }
   reset() { /// method for erase all elements
-    this.list = [];
+    this.list_ = [];
   }
   getList() { /// getter of the list
-    return this.list;
+    return this.list_;
   }
   print() { /// method for print the list
-    for (let i = 0; i < this.list.length; ++i) {
-      console.log(this.list[i]);
+    for (let i = 0; i < this.list_.length; ++i) {
+      console.log(this.list_[i]);
     }
   }
 }; 
